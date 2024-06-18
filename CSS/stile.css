@@ -126,8 +126,34 @@
    
 .main{
     margin-top:100px;
-}
+}#container-dark{
+    background-color: #f8f8f9;
+    position: relative;
+    width: 50px;
+    height: 30px;
+    box-shadow: inset 4px 4px 6px #cecece,
+                inset -4px -4px 6px #fff;
 
+    border-radius: 25px;
+    cursor: pointer;
+}.toggle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    transform: scale(.7);
+    background-color: linear-gradient(145deg, #d8d8d8, #fff);
+    border-radius: 25px;
+    box-shadow: 3px 3px 8px gray,
+                -3px 3px 8px ;
+}
+#container-dark.active .toggle{
+    left: 20px;
+
+}body.active{
+    background-color: rgb(23, 23 , 23);
+}
 .seccion{
     background-color: #e2dfd2;
     margin-top: 120px;
@@ -475,8 +501,8 @@ h2{
     left:-100%;
     top: var(--header-height);
     border: 2px solid ;
-    width: 80%;
-    height: calc(50vh);
+    width:80%;
+    height: calc(70vh);
     padding: 60px 20px 40px;
     background-color: #b1a4a4;
     transition: left .5s ease-in-out;

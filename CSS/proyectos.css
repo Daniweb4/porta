@@ -1,5 +1,14 @@
-body{
-    background-color:  #C8E6C9;
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+ 
+
+  margin: 0;
+  background-color:  #C8E6C9;
 }
 .container_img{
     position: relative;
